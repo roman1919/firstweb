@@ -1,3 +1,12 @@
+/*body .heder-navbar {
+    position:  fixed;
+    justify-content: space-around;
+    background-color: #E95420;
+    }
+body nav.navbar-expand-lg.navbar-light.bg-light {
+    background-color: #E95420;
+}*/
+
 body main .first h2 {
     text-align: center;
     margin-top: 80px;
