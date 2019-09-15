@@ -9,17 +9,21 @@ body .nav {
 
 body .navbar-light .navbar-nav .nav-link {
     color: white;
+    padding-right: 76px;
 }
 
 body .navbar-light .navbar-nav .active>.nav-link {
     color: white;
+    padding-right: 76px;
 }
 body .navbar {
     position: fixed;
     z-index: 1;
     max-width: 1500px;
     text-transform: uppercase;
+    justify-content: center;
 }
+
 
 body .bg-light {
     background-color: #E95420 !important;
