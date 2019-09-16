@@ -12,8 +12,8 @@
         <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
-        <header class="container">
-            <div class="heder-navbar">
+        <header>
+        <div class="heder-navbar">
                 <nav class="navbar navbar-expand-md navbar-light bg-light">
                     <a class="navbar-brand" href="#home">
                         <img src="img/pegasus-logo.png" width="50" height="50" alt="Золотий Пегас">
@@ -44,6 +44,7 @@
                     </div>
                 </nav>
             </div>
+         <div class="container">
             <div id="carousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -72,6 +73,7 @@
             </div>
         </header>
         <main class="container">
+      <section id="home">
             <div class="first">
                 <h2>Подорожі змінюють твоє ставлення до світу</h2>
                 <p>Мільйони людей у всьому світі проводять свою відпустку, подорожуючи. Вони подорожують, щоб побачити інші країни і континенти, сучасні міста і руїни стародавніх міст, вони подорожують, щоб насолодитися живописними місцями, або просто для зміни обставин. Завжди цікаво відкрити щось нове, побачити інший спосіб життя, зустріти різних людей, спробувати різну їжу, послухати різні музичні ритми і зробити багато фотографій.</p>
@@ -93,7 +95,9 @@
                     <li>авіатури в вихідні дні.</li>
                 </ul>
             </div>
-            <h2 id="turs">Пошук туру</h2>
+      </section>
+      <section id="turs">
+            <h2>Пошук туру</h2>
             <div class="card mb-3">
                 <img src="img/turkish-hotel.jpg" class="card-img-top" alt="Турецький готель в Фетхіє">
                 <div class="card-body">
@@ -101,9 +105,6 @@
                         Туреччина - Фетхіє, Hotel Harman*****<br>15999 грн/ 2 тижні
                     </h5>
                     <p class="card-text">Hotel Harman розташований в південній частині Туреччини - місто Фетхіє. До пляжу ~500 м. Готель складається з трьох одноповерхових будівель. Номери оснащені телевізором і кондиціонером. На території готелю знаходиться басейн, ресторан, бар, а також магазин з сувенірами. Це місце задовольнить очікування навіть найвимогливіших туристів.</p>
-                    <p class="card-text">
-                        <small class="text-muted">Last updated 3 mins ago</small>
-                    </p>
                 </div>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Turkish-hotel-info">Додаткова інформація
 </button>
@@ -115,9 +116,6 @@
                         Єгипет - Хургада, Hotel Empire****<br>13999 грн/ 2 тижні
                     </h5>
                     <p class="card-text">Hotel Empire розташований в самому центрі давньої Хургади. До аеропорту ~ 10 км. До пляжу ~ 250 м. Скромний готель середнього класу з гарною організацією, може похвалитись дуже зручним розташуванням. Це цікава пропозиція для всієї родини за розумною ціною.</p>
-                    <p class="card-text">
-                        <small class="text-muted">Last updated 3 mins ago</small>
-                    </p>
                 </div>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#egypt-hotel-info">Додаткова інформація
 </button>
@@ -129,9 +127,6 @@
                         Кенія - Момбаса, Hotel Eden****<br>17999 грн/ 2 тижні
                     </h5>
                     <p class="card-text">Екскурсійний тур з відвідуванням найкрасивіших місць Кенії. Проживання в чотирьохзірковому готелі Eden, розташованому в 35 км від Момбаси. До пляжу ~ 200 м, до аеропорту ~ 20 км. Готель побудовано в арабському стилі, а номера оформлені в африканському стилі. На території готелю є багато ресторанів, барів і магазинів з сувенірами.</p>
-                    <p class="card-text">
-                        <small class="text-muted">Last updated 3 mins ago</small>
-                    </p>
                 </div>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#african-hotel-info">Додаткова інформація
 </button>
@@ -150,10 +145,85 @@
     </div>
                 </div>
             </div>
+      </section>
+      <section id="gallery">
             <h2>Галерея</h2>
+      </section>
+      <section id="contacts">
+            <h2>Контакти</h2>
+                <form method="POST" action="https://formspree.io/roman.kot.1994@gmail.com">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputName4">Ваше ім'я:</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="Ваше ім'я">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Електронна адреса:</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Електронна адреса">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Адреса:</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="вул. буд.№ кв.№">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">Місто:</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputCountry">Країна:</label>
+      <select id="inputCountry" class="form-control">
+        <option selected>Вибрати...</option>
+        <option>Австрія</option>
+        <option>Аргентина</option>
+                     <option>Бельгія</option>
+                                    <option>Велика Британія</option>
+                                    <option>Греція</option>
+                                    <option>Домініканська Республіка</option>
+                                    <option>Єгипет</option>
+                                    <option>Італія</option>
+                                    <option>Кіпр</option>
+                                    <option>Мальта</option>
+                                    <option>Нідерланди</option>
+                                    <option>Польща</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputPhone">Телефон:</label>
+      <input type="number" class="form-control" id="inputPhone" min="0" max="999999999999">
+    </div>
+  </div>
+  </div>
+  <div class="form-group">
+    <label for="inputQuestion">Ваше запитання:</label>
+    <input type="text" class="form-control" id="inputQuestion" placeholder="Ваше запитання">
+  </div>
+  <button type="submit" class="btn btn-primary">Надіслати</button>
+</form>
+<br>
+                <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.337268784223!2d23.997858215240466!3d49.83612003931993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add83da49059d%3A0x59d76bf9223dd4ed!2z0YPQuy4g0JPQvtGA0L7QtNC-0YbQutCw0Y8sIDE1NSwg0JvRjNCy0L7Qsiwg0JvRjNCy0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1sru!2sua!4v1568206931993!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+</section>
 
         </main>
-        <footer></footer>
+        <footer class="container">
+        <p>Львів вул. Городоцька 155; тел: +38 (093) 000 00 00;  e-mail: office@office.com.ua</p>
+                <p>
+                    <a href="https://www.instagram.com">
+                        <img src="img/instagram-icon.png" alt="Логотип Інстаграм">
+                    </a>
+                    <a href="https://www.facebook.com">
+                        <img src="img/black-and-white-facebook-logo.png" alt="Чорний з білим логотип Фейсбук">
+                    </a>
+                    <a href="https://twitter.com">
+                        <img src="img/twitter-logo.png" alt="Логотип Твітер">
+                    </a>
+                </p>
+                <p>© 2009-2019 КЕПРЕЙТ ПАРТНЕРС. Усі права захищені.</p>
+            </div>
+        </footer>
         <!-- Modal turkish hotel -->
         <div class="modal fade" id="Turkish-hotel-info" tabindex="-1" role="dialog" aria-labelledby="Turkish-hotel-infoLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">

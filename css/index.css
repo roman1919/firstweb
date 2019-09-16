@@ -7,9 +7,11 @@ body .nav {
     background-color: #E95420;
 }*/
 
+
 body .navbar-light .navbar-nav .nav-link {
     color: white;
     padding-right: 76px;
+    width: 100%;
 }
 
 body .navbar-light .navbar-nav .active>.nav-link {
@@ -22,8 +24,11 @@ body .navbar {
     max-width: 1500px;
     text-transform: uppercase;
     justify-content: center;
+    width:100%;
 }
-
+body #navbarNav {
+    justify-content: center;
+}
 
 body .bg-light {
     background-color: #E95420 !important;
